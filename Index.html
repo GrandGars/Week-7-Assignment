@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Animations & JavaScript Functions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <h1 class="logo">GrandGars</h1>
+            <ul class="nav-links">
+                <li><a href="#animations">Animations</a></li>
+                <li><a href="#functions">Functions</a></li>
+                <li><a href="#interactive">Interactive</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">CSS3 + JavaScript Magic</h1>
+            <p class="hero-subtitle">Experience the power of animations and functions working together</p>
+            <button class="cta-button" id="exploreBtn">Start Exploring</button>
+        </div>
+        <div class="hero-animation">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Part 1: CSS3 Animations Section -->
+        <section id="animations" class="section">
+            <h2>CSS3 Transitions & Animations</h2>
+            
+            <!-- Button Animations -->
+            <div class="animation-group">
+                <h3>Button Animation Effects</h3>
+                <div class="button-demo">
+                    <button class="btn btn-pulse">Pulse Effect</button>
+                    <button class="btn btn-bounce">Bounce Effect</button>
+                    <button class="btn btn-glow">Glow Effect</button>
+                    <button class="btn btn-slide">Slide Effect</button>
+                </div>
+            </div>
+
+            <!-- Keyframe Animations -->
+            <div class="animation-group">
+                <h3>Keyframe Animations</h3>
+                <div class="keyframe-demo">
+                    <div class="animated-box spin">Spin</div>
+                    <div class="animated-box bounce">Bounce</div>
+                    <div class="animated-box fade">Fade</div>
+                    <div class="animated-box shake">Shake</div>
+                </div>
+            </div>
+
+            <!-- Transform Gallery -->
+            <div class="animation-group">
+                <h3>CSS Transform Gallery</h3>
+                <div class="transform-gallery">
+                    <div class="transform-card" data-transform="rotate">
+                        <div class="card-front">Rotate</div>
+                    </div>
+                    <div class="transform-card" data-transform="scale">
+                        <div class="card-front">Scale</div>
+                    </div>
+                    <div class="transform-card" data-transform="skew">
+                        <div class="card-front">Skew</div>
+                    </div>
+                    <div class="transform-card" data-transform="translate">
+                        <div class="card-front">Translate</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 2: JavaScript Functions Section -->
+        <section id="functions" class="section">
+            <h2>JavaScript Functions & Scope</h2>
+            
+            <!-- Calculator Demo -->
+            <div class="function-group">
+                <h3>Function Calculator</h3>
+                <div class="calculator">
+                    <div class="calc-inputs">
+                        <input type="number" id="num1" placeholder="Enter number" value="10">
+                        <input type="number" id="num2" placeholder="Enter number" value="5">
+                    </div>
+                    <div class="calc-buttons">
+                        <button class="calc-btn" data-operation="add">Add</button>
+                        <button class="calc-btn" data-operation="subtract">Subtract</button>
+                        <button class="calc-btn" data-operation="multiply">Multiply</button>
+                        <button class="calc-btn" data-operation="divide">Divide</button>
+                    </div>
+                    <div class="calc-result">
+                        <p>Result: <span id="calcResult">0</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scope Demo -->
+            <div class="function-group">
+                <h3>Scope Demonstration</h3>
+                <div class="scope-demo">
+                    <button id="scopeDemoBtn">Test Scope</button>
+                    <div class="scope-output">
+                        <p>Global Counter: <span id="globalCounter">0</span></p>
+                        <p>Local Counter: <span id="localCounter">0</span></p>
+                        <p>Function Calls: <span id="functionCalls">0</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- String Functions -->
+            <div class="function-group">
+                <h3>String Manipulation</h3>
+                <div class="string-demo">
+                    <input type="text" id="stringInput" placeholder="Enter text here..." value="Hello World">
+                    <div class="string-buttons">
+                        <button class="string-btn" data-action="reverse">Reverse</button>
+                        <button class="string-btn" data-action="uppercase">Uppercase</button>
+                        <button class="string-btn" data-action="lowercase">Lowercase</button>
+                        <button class="string-btn" data-action="count">Count Chars</button>
+                    </div>
+                    <div class="string-result">
+                        <p>Result: <span id="stringResult">-</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: Combined Animations & JavaScript -->
+        <section id="interactive" class="section">
+            <h2>Combined CSS & JavaScript Magic</h2>
+            
+            <!-- Animation Controller -->
+            <div class="interactive-group">
+                <h3>Animation Controller</h3>
+                <div class="animation-controller">
+                    <div class="controlled-box" id="jsAnimatedBox">
+                        <span>Controlled Box</span>
+                    </div>
+                    <div class="control-buttons">
+                        <button class="control-btn" data-action="start">Start Animation</button>
+                        <button class="control-btn" data-action="stop">Stop Animation</button>
+                        <button class="control-btn" data-action="reset">Reset Position</button>
+                        <button class="control-btn" data-action="random">Random Move</button>
+                    </div>
+                    <div class="animation-status">
+                        Status: <span id="animationStatus">Stopped</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Flip Game -->
+            <div class="interactive-group">
+                <h3>Card Flip Memory Game</h3>
+                <div class="card-game">
+                    <div class="game-controls">
+                        <button id="startGame">Start Game</button>
+                        <button id="resetGame">Reset Game</button>
+                        <span class="score">Matches: <span id="matchCount">0</span>/4</span>
+                    </div>
+                    <div class="card-container" id="cardContainer">
+                        <!-- Cards will be generated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal System -->
+            <div class="interactive-group">
+                <h3>Animated Modal System</h3>
+                <div class="modal-demo">
+                    <button class="modal-btn" data-modal="success">Success Modal</button>
+                    <button class="modal-btn" data-modal="warning">Warning Modal</button>
+                    <button class="modal-btn" data-modal="info">Info Modal</button>
+                </div>
+            </div>
+
+            <!-- Particle System -->
+            <div class="interactive-group">
+                <h3>Interactive Particle System</h3>
+                <div class="particle-system">
+                    <canvas id="particleCanvas" width="600" height="200"></canvas>
+                    <div class="particle-controls">
+                        <button id="addParticles">Add Particles</button>
+                        <button id="clearParticles">Clear All</button>
+                        <button id="explodeParticles">Explode Effect</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Success!</h3>
+            <p>Operation completed successfully.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="warningModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Warning!</h3>
+            <p>This action requires your attention.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="infoModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Information</h3>
+            <p>Here's some important information for you.</p>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 CSS3 & JavaScript Interactive Experience.</p>
+        <p>&copy; Built with pure CSS and vanilla JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
